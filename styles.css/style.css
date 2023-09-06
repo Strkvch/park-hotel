@@ -1,0 +1,839 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+header {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.065em;
+    background-color: rgba(32, 83, 80, 0.5);
+    padding: 30px 0 31px;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+header a:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 0 45px;
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.background-banner {
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    padding: 450px 0 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+}
+
+.text {
+    font-size: 1.25rem;
+    line-height: 29px;
+}
+
+.background-banner p {
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    max-width: 495px;
+    margin: 30px auto 60px;
+}
+
+.background-banner a:first-of-type {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    width: 312px;
+    height: 60px;
+    background: #AE5F3D;
+    border-radius: 30px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+.background-banner a {
+    transition: all .4s;
+}
+
+.background-banner a:hover {
+    color: #FFF;
+    background: rgb(206, 45, 45);
+    opacity: .5;
+}
+
+.booking-frm::after {
+    content: "";
+    width: 57px;
+    height: 23px;
+    display: block;
+    background-image: url("../icons/Vector1.svg");
+    margin: 80px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+    header {
+        padding: 24px 0 25px;
+    }
+    header a:not(:last-child)::after {
+        width: 25px;
+        margin: 0 50px;
+    }
+    .background-banner {
+        padding: 353px 0 25px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: 1.22rem;
+        line-height: 26px;
+    }
+    .background-banner p {
+        font-size: 1rem;
+        line-height: 23px;
+        max-width: 356px;
+        margin: 20px auto 45px;
+    }
+    .background-banner a:first-of-type {
+        font-size: 0.94rem;
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+    }
+    .booking-frm::after {
+        width: 57px;
+        height: 23px;
+        margin: 40px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    header {
+        padding: 18px 0 20px;
+    }
+    header a:not(:last-child)::after {
+        width: 20px;
+        height: 1px;
+    }
+    .background-banner {
+        padding: 249px 0 25px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .text {
+        font-size: 1.46rem;
+    }
+    .background-banner p {
+        font-size: 1.2rem;
+        margin: 20px auto 35px;
+    }
+    .background-banner a:first-of-type {
+        font-size: 1.13rem;
+    }
+    .booking-frm::after {
+        margin: 27px auto 0;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    header {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.065em;
+        background-color: rgba(32, 83, 80, 0.5);
+        padding: 20px 0;
+    }
+    header a {
+        display: block;
+    }
+    header a:not(:last-child)::after {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 617px;
+}
+
+.about-us h2 {
+    margin: 30px 0 37px;
+}
+
+.about-us p {
+    max-width: 608px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us {
+        padding: 80px 0 37px;
+    }
+    .about-us img {
+        max-width: 553px;
+    }
+    .about-us p {
+        max-width: 537px;
+    }
+    h2 {
+        font-size: 1.94rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 70px 0;
+    }
+    .about-us img {
+        max-width: 486px;
+    }
+    .about-us h2 {
+        margin: 25px 0 32px;
+    }
+    .about-us p {
+        max-width: 571px;
+    }
+    h2 {
+        font-size: 2.33rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .text {
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+    .about-us img {
+        max-width: 400px;
+    }
+}
+
+.bg-grey {
+    background-color: #F5F5F5;
+}
+
+.our-entertainments .text {
+    max-width: 520px;
+    margin: 37px auto 30px;
+}
+
+.our-entertainments article {
+    background-color: #FFF;
+    border: 2px solid #F1F1F1;
+    border-radius: 30px;
+    display: inline-block;
+    width: calc((100% - 2*24px) / 3);
+    max-width: 444px;
+    padding: 30px 5px;
+}
+
+.our-entertainments article:not(:last-child) {
+    margin-right: 24px;
+}
+
+.our-entertainments i {
+    color: #AE5F3D;
+    font-size: 7.5rem;
+}
+
+.our-entertainments article h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 25px 0 20px;
+}
+
+.our-entertainments article p {
+    font-size: 1rem;
+    line-height: 27px;
+}
+
+@media screen and (max-width: 1176px) {
+    .wrapper {
+        padding-left: 43px;
+        padding-right: 41px;
+    }
+    .our-entertainments i {
+        font-size: 6rem;
+    }
+    .our-entertainments article h3 {
+        font-size: 1.22rem;
+        margin: 25px 0;
+    }
+    .our-entertainments article p {
+        font-size: 0.8rem;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
+    .our-entertainments .text {
+        max-width: 456px;
+        line-height: 27px;
+    }
+    .our-entertainments article {
+        width: calc((100% - 2*20px) / 3);
+        padding: 25px 6px 22px;
+    }
+    .our-entertainments article:not(:last-child) {
+        margin-right: 20px;
+    }
+    .our-entertainments i {
+        font-size: 6.6rem;
+    }
+    .our-entertainments article h3 {
+        font-size: 1.22rem;
+        margin: 15px 0;
+    }
+    .our-entertainments article p {
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    .our-entertainments i {
+        font-size: 5rem;
+    }
+    .our-entertainments article p {
+        font-size: 0.7rem;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .our-entertainments i {
+        font-size: 4rem;
+    }
+    .our-entertainments article p {
+        font-size: 0.6rem;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+    .our-entertainments .text {
+        max-width: 520px;
+        line-height: 27px;
+        margin: 32px auto 35px;
+    }
+    .our-entertainments article {
+        display: block;
+        width: 100%;
+        padding: 30px 14px 21px;
+        margin: 0 auto;
+    }
+    .our-entertainments article:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+    .our-entertainments i {
+        font-size: 10rem;
+    }
+    .our-entertainments article h3 {
+        font-size: 1.53rem;
+        line-height: 27px;
+        margin: 25px 0 20px;
+    }
+    .our-entertainments article p {
+        font-size: 1.53rem;
+        line-height: 31px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .our-entertainments article {
+        padding: 25px 8px 22px;
+    }
+    .our-entertainments i {
+        font-size: 8rem;
+    }
+    .our-entertainments article h3 {
+        margin: 15px 0;
+    }
+    .our-entertainments article p {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+}
+
+.our-apartments img {
+    width: 100%;
+    max-width: 698px;
+}
+
+.our-apartments .text {
+    max-width: 617px;
+    margin: 30px auto 55px;
+}
+
+.our-apartments article {
+    display: inline-block;
+    width: calc((100% - 2 * 48px) / 3);
+    max-width: 698px;
+    vertical-align: top;
+    position: relative;
+}
+
+.our-apartments article:not(:last-child) {
+    margin-right: 48px;
+}
+
+.our-apartments article h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 25px 0 15px;
+}
+
+.our-apartments article p {
+    font-size: 0.9rem;
+}
+
+.our-apartments article::after {
+    content: "";
+    width: 132px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.our-apartments article:first-of-type::after {
+    content: "от 7 т.р./сутки";
+}
+
+.our-apartments article:nth-of-type(2)::after {
+    content: "от 23 т.р./сутки";
+}
+
+.our-apartments article:nth-of-type(2)::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    background-color: #F24040;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+}
+
+.our-apartments article:last-of-type::after {
+    content: "от 13 т.р./сутки";
+}
+
+.left-content {
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    .our-apartments .text {
+        margin: 30px auto;
+    }
+    .our-apartments article {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .our-apartments article:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+    .our-apartments article h3 {
+        font-size: 1.66rem;
+        margin: 15px 0;
+    }
+    .our-apartments article p {
+        font-size: 1.27rem;
+        line-height: 27px;
+    }
+    .our-apartments article::after {
+        width: 150px;
+        height: 34px;
+        line-height: 34px;
+        top: 20px;
+        right: 20px;
+        font-size: 1rem;
+    }
+    .our-apartments article:nth-of-type(2)::before {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        left: -30px;
+        font-size: 0.88rem;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-apartments .text {
+        max-width: 501px;
+        margin: 25px auto 30px;
+    }
+    .our-apartments article {
+        max-width: 590px;
+    }
+    .our-apartments article:not(:last-child) {
+        margin: 0 auto 80px;
+    }
+    .our-apartments article h3 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    .our-apartments article p {
+        font-size: 1.46rem;
+        line-height: 26px;
+    }
+    .our-apartments article::after {
+        font-size: 1.33rem;
+        width: 174px;
+        height: 36px;
+        line-height: 36px;
+        top: 10px;
+        right: 10px;
+    }
+    .our-apartments article:nth-of-type(2)::before {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .our-apartments article {
+        max-width: 360px;
+        text-align: justify;
+    }
+    .our-apartments article p {
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+    .our-apartments article::after {
+        width: 132px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+    .our-apartments article:nth-of-type(2)::before {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+        font-size: 0.9rem;
+        line-height: 50px;
+    }
+}
+
+form {
+    max-width: 1016px;
+    background: #FFF;
+    border: 1px solid #EEE;
+    border-radius: 30px;
+    padding: 100px 121px 100px 119px;
+    margin: 0 auto;
+}
+
+.booking-form .text {
+    max-width: 572px;
+    margin: 30px auto 50px;
+}
+
+.label-group {
+    text-align: left;
+    display: block;
+}
+
+.label-group,
+p.left-content {
+    font-size: 1.1rem;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.name-input {
+    font-size: 1rem;
+    line-height: 23px;
+    color: #9D9D9D;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 60px;
+    padding-left: 35px;
+}
+
+.name-input:focus {
+    outline-color: rgb(236, 176, 158);
+}
+
+form div.left-content:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+form div input {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+form div label {
+    font-size: 1rem;
+    line-height: 23px;
+    color: #474747;
+    display: inline;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFF;
+    display: block;
+    width: 404px;
+    height: 60px;
+    line-height: 60px;
+    background: #AE5F3D;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 40px auto 0;
+}
+
+button {
+    transition: all .4s;
+}
+
+button:hover {
+    color: #FFF;
+    background: rgb(206, 45, 45);
+    opacity: .5;
+}
+
+@media screen and (max-width: 1024px) {
+    form {
+        max-width: 820px;
+        padding: 80px 68px 80px 67px;
+    }
+    .booking-form .text {
+        margin: 30px auto;
+    }
+    .name-input {
+        height: 53px;
+    }
+    form div input {
+        margin-right: 15px;
+    }
+    form div label {
+        line-height: 21px;
+    }
+    button {
+        width: 324px;
+        height: 48px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 720px;
+        padding: 70px 52px 70px 53px;
+    }
+    .booking-form .text {
+        max-width: 506px;
+        margin: 25px auto 35px;
+    }
+    .label-group,
+    p.left-content {
+        font-size: 1.46rem;
+    }
+    .name-input {
+        font-size: 1.33rem;
+        height: 58px;
+    }
+    .name-input:first-of-type {
+        margin-bottom: 20px;
+    }
+    .name-input:last-of-type {
+        margin-bottom: 25px;
+    }
+    form div input {
+        margin-right: 13px;
+    }
+    form div label {
+        font-size: 1.33rem;
+    }
+    button {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .label-group,
+    p.left-content {
+        font-size: 1.2rem;
+    }
+    .name-input {
+        font-size: 1rem;
+    }
+    form div label {
+        font-size: 1rem;
+    }
+    button {
+        width: 300px;
+    }
+}
+
+footer {
+    padding: 70px 0;
+}
+
+footer nav {
+    width: 123px;
+    padding: 25px 0;
+    margin: 35px auto;
+    border-top: 0.7px solid #737373;
+    border-bottom: 0.7px solid #737373;
+}
+
+footer h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.065em;
+    color: #000;
+    display: block;
+}
+
+footer nav a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+footer .social-networks a {
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+footer .social-networks i {
+    color: #000;
+}
+
+footer .social-networks a:not(:last-child) {
+    margin-right: 30px;
+}
+
+footer .social-networks i:hover {
+    transform: scale(1.5);
+}
+
+.scrollup a {
+    position: fixed;
+    background-color: rgba(169, 185, 182, 0.644);
+    color: #AE5F3D;
+    text-align: center;
+    font-size: 2.5rem;
+    right: 35px;
+    bottom: 35px;
+    border-radius: 20px;
+    width: 70px;
+    padding: 5px 10px;
+}
+
+.scrollup a:hover {
+    color: rgb(206, 45, 45);
+    background: rgba(170, 241, 226, 0.815);
+    opacity: .5;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 0;
+    }
+    footer nav {
+        width: 107px;
+        padding: 20px 0;
+        margin: 25px auto;
+    }
+    footer a {
+        font-size: 0.72rem;
+    }
+    footer nav a:not(:last-child) {
+        margin-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer nav {
+        width: 123px;
+        border-top: 0.5px solid #737373;
+        border-bottom: 0.5px solid #737373;
+    }
+    footer h3 {
+        font-size: 1.66rem;
+    }
+    footer a {
+        font-size: 1rem;
+    }
+    footer nav a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
